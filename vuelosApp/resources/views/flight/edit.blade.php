@@ -70,6 +70,7 @@
     </div>
     
     <input type="submit" class="btn btn-dark" value="Edit">
+    <a class="btn-primary btn" href="{{ url('flight/' . $flight->id )}}">Link to show</a>
     <a href="{{ url('flight') }}" class="btn btn-dark">Back</a>
 
 </form>

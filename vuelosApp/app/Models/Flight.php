@@ -10,5 +10,8 @@ class Flight extends Model {
     
     protected $table = 'flight';
     
+    // No tiene timestamps
+    public $timestamps = false;
+    
 	protected $fillable = ['cityOrigin', 'cityDestination', 'company', 'date', 'depureTime', 'arrivalTime', 'ability'];
 }

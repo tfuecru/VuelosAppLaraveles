@@ -40,7 +40,7 @@
 
         <label for="date" class="form-label">Date</label>
 
-        <input type="text" class="form-control" id="date" name="date" maxlength="10" required value="{{ old('date') }}">
+        <input type="date" class="form-control" id="date" name="date" required value="{{ old('date') }}">
 
     </div>
     
@@ -48,7 +48,7 @@
 
         <label for="depureTime" class="form-label">Depure Time</label>
 
-        <input type="text" class="form-control" id="depureTime" name="depureTime" maxlength="8" required value="{{ old('depureTime') }}">
+        <input type="time" class="form-control" id="depureTime" name="depureTime" required value="{{ old('depureTime') }}">
 
     </div>
     
@@ -56,7 +56,7 @@
 
         <label for="arrivalTime" class="form-label">Arrival Time</label>
 
-        <input type="text" class="form-control" id="arrivalTime" name="arrivalTime" maxlength="8" required value="{{ old('arrivalTime') }}">
+        <input type="time" class="form-control" id="arrivalTime" name="arrivalTime" required value="{{ old('arrivalTime') }}">
 
     </div>
     
@@ -64,7 +64,7 @@
 
         <label for="ability" class="form-label">Ability</label>
 
-        <input type="integer" class="form-control" id="ability" name="ability" required value="{{ old('ability') }}">
+        <input type="number" class="form-control" id="ability" name="ability" min="0" required value="{{ old('ability') }}">
 
     </div>
     

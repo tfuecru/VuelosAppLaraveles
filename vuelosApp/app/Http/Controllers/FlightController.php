@@ -33,8 +33,7 @@ class FlightController extends Controller {
      */
     public function store(Request $request) {
          // 1º Generar objeto para guardar
-        $object = new Flight($request->all());
-        
+        $object = new Flight($request->all()); 
         // 2º Intentar guardar
         try {
             $result = $object->save();
@@ -45,7 +44,6 @@ class FlightController extends Controller {
                 $target = 'flight/create';
             }
             return redirect($target)->with(['message' => 'The flight has been saved.']);
-            
         } catch(\Exception $e) {
             // 4º Si no lo he guardado, volver a la página anterior con sus datos para volver a rellenar el formulario
             //dd($e->getMessage());
